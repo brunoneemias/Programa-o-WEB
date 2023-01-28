@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Clients</title>
+</head>
+
+<style>
+    body {
+        margin: 0px auto;
+        padding: 0px;
+        background-color: #2F4F4F;
+        color: #FFF;
+        font-family:courier,arial, helvetica;
+		color: white;
+     
+    }
+
+    #all-content{
+		color: black;
+        height:900px;
+    }
+
+    #first,
+    #second,
+#third	{
+        margin-top: -60px
+    }
+
+    #form {
+        background-color:#FF8C00;
+        width: 800px;
+        height: 850px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        box-shadow: 0px 9px 20px black;
+
+    }
+
+    #content1 {
+        margin-top:50px;
+        width: 600px;
+        height: 220px;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+
+    #content2 {
+        width: 600px;
+        height: 200px;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+
+    #content3 {
+        width: 600px;
+        height: 220px;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+
+    #icon-person,
+    #icon-email,
+    #icon-house {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .name,
+    .born {
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+
+    #inp-name,
+    #inp-born {
+        margin-left: 0px;
+    }
+
+    #man,
+    #woman,
+    .op-select {
+        margin-top: 15px;
+    }
+
+    .cpf,
+    #inp-cpf {
+        margin-top: 15px;
+    }
+
+    input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
+    input {
+        border-radius: 30px;
+        border: none;
+        height: 20px;
+
+    }
+
+    .inp-second {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    #1,
+    #2,
+    #3,
+    #4 {
+        margin-left: 2px;
+    }
+
+    .inp-third {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+   
+
+    button{
+        border-radius: 30px;
+        border: none;
+        height: 30px;
+        background-color: #2d3436;
+        color: white;
+    }
+
+  
+</style>
+
+<body>
+    <div id="all-content">
+        <center><h1>Register Client Below</h1></center> 
+        <div id="form">
+
+            <fieldset id="content1">
+                <legend>Personal Information</legend>
+                <img src="img/person.png"  style="width: 80px;height: 80px; " id="icon-person">
+                <form>
+                    <div id="first">
+                        <span class="name" style="margin-left:104px;" >Name:</span>
+                        <input type="text" name="name" id="inp-name" class="name"
+                            style="width: 300px;margin-left: 0px;">
+                        <br>
+                        <span class="born" style="margin-left:104px;">Born:</span>
+                        <input type="date" name="born" id="inp-born" class="born" style="width: 150px;">
+                        <br>
+                        <span class="gender" style="margin-left:104px;">Gender:</span>
+                        <input type="radio" name="gender" id="man" checked>
+                        <label for="man">Male</label>
+                        <input type="radio" name="gender" id="woman">
+                        <label for="fem">Female</label>
+                        <br>
+                        <span class="op-select" style="margin-left:104px;">Graduation:</span>
+                        <select name="formacao" class="op-select">
+                            <option value="Graduate">Incomplete High School</option>
+                            <option value="Graduate">Complete High School</option>
+                            <option value="Graduate">Incomplete Higher Education</option>
+                            <option value="Graduate">Complete Higher Education</option>
+                            <option value="Graduate">Doctorate Degree</option>
+                            <option value="Graduate">Post doctoral</option>
+                        </select>
+                        <span style="margin-left:104px;">Profession:</span>
+                        <select name="profession" id="form-profession">
+                            <option value="profissao">Software development</option>
+                            <option value="profissao">Support</option>
+                            <option value="profissao">Network infrastructure</option>
+                            <option value="profissao">Information Security</option>
+                        </select>
+                        <br>
+                        <span class="cpf" style="margin-left:104px;">CPF:</span>
+                        <input type="text" name="cpf" id="inp-cpf" style="width: 300px; margin-left: 24px;" >
+						
+                    </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset id="content2">
+                <legend>Contact</legend>
+                <img src="img/contact.png" style="width: 80px;height: 80px;" id="icon-email">
+                    
+					<div id="second">
+                        <span class="inp-second">Email:</span>
+                        <input type="email" name="email" class="inp-second" id="1"
+                            style="width: 300px; margin-left: 24px;">
+                        <br>
+                        <span class="inp-second">Phone:</span>
+                        <input type="tel" name="phone" class="inp-second" id="2"
+                            style="width: 150px;margin-left: 5px;">
+                        <br>
+                        <span class="inp-second">Cellphone number:</span>
+                        <input type="tel" name="cellphone" class="inp-second" id="3"
+                            style="width: 150px;margin-left: 15px;">
+                        <br>
+                        <span class="inp-second">Skype:</span>
+                        <input type="email" name="skype" class="inp-second" id="4"
+                            style="width: 150px;margin-left: 23px;;">
+                    </div>
+
+            </fieldset>
+            <br>
+            <fieldset id="content3">
+                <legend>Address:</legend>
+                <img src="img/placeholder.png" style="width: 80px;height: 80px;" id="icon-house">
+				
+                    <div id="third">
+                        <span class="inp-third"style="margin-left:104px;">Public place </span>
+                                <input type="text" name="Place" class="inp-third" id="5">
+                                <br>
+                                <span class="inp-third"style="margin-left:104px;">Number:</span>
+                                <input type="number" name="num" class="inp-third" id="6"
+                                    style="width: 85px;margin-left: 45px;">
+                                <span class="inp-third" style="margin-left: 10px;"></span>ZIP CODE:</span>
+                                <input type="text" name="cep" class="inp-third" id="7"
+                                    style="width: 85px;margin-left: 30px;">
+                                <br>
+                                <span class="inp-third" style="margin-left:104px;">Neighborhood:</span>
+                                <input type="text" name="Neighborhood" class="inp-third" id="8" style="width: 140px;margin-left: 0px;">
+                                <span class="inp-third" style="margin-left: 0px;">City:</span>
+                                <input type="text" name="city" class="inp-third" id="9" style="width: 100px;margin-left: 0px;">
+                                <br>
+                                <span class="inp-third" style="margin-left:104px;" >State:</span>
+                                <select id="state" name="state" class="inp-third" style="margin-left: 52px;border-radius: 30px;height: 25px;">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <br>
+                                <span class="inp-third" style="margin-left:104px;" >Complement:</span>
+                                <input type="text" name="complement" class="inp-third" id="11" style="margin-left: 3px;">
+                    </div>
+                   
+            </fieldset>
+            <br>
+            <span><button type="submit" >Save</button> &nbsp; <button type="reset">Clean</button></span>
+        </form>
+        </div>
+        <br>
+
+</html>
