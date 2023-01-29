@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   
+    <h:head>
+        <title>Consumo Combustivel</title>
+    </h:head>
+    <h:body styleClass="imagem_fundo">
+        <link rel="stylesheet" type="text/css" href= "css/estilos.css"> </link>
+        <h:form>
+        <p:fieldset legend="Calculo consumo de combustivel" styleClass="fundo">
+            <p:panelGrid columns="2" > 
+                <p:outputLabel value="Quilometragem percorrida" styleClass="rotulo_titulo" /> 
+                <p:inputText id="txtKm" value="#{calculo.km}"/>
+                
+                <p:outputLabel value="Litros" styleClass="rotulo_titulo"/>
+                <p:inputText id="txtLitros" value="#{calculo.litros}"/> 
+            </p:panelGrid>
+        </p:fieldset >
+            <br></br>
+            <p:fieldset  styleClass="fundo">
+                <p:commandButton  value="Calcular" action="#{calculo.calcular()}" styleClass="buttons" update="@form"/>  
+                <p:commandButton  value="Limpar" action="#{calculo.limpar()}" styleClass="buttons" update="@form" /> 
+            </p:fieldset>                  
+             <br></br>
+             <p:fieldset>
+                 <p:outputLabel value="#{calculo.mensagem}"/> 
+                 <br></br>
+                 <p:outputLabel value="#{calculo.msg}"/>
+                 
+             </p:fieldset>
+    </h:form>
+    </h:body>
+</html>
+
