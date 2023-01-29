@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Orçamento Mensal</title>
+    </h:head>
+    <h:body>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen"></link>
+        <h:form>
+            <p:panelGrid columns="3" styleClass="semBorda">
+                <f:facet name="header">
+                    <p:graphicImage library="images" name="Banner.png" width="100%"/>     
+                </f:facet> 
+                
+                <p:card style="width: 30em; height: 50em">
+                <f:facet name="title" >
+                  Despesas  
+                </f:facet>
+                
+                <f:facet name="subtitle"> 
+                   Composição das Despesas Mensais
+                </f:facet>
+                
+                <p:panelGrid columns="2">
+                    <h:outputLabel value="Receita" styleClass="rotulo_receita1"/>
+                    <p:inputNumber value="#{calculos.receita}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Alimentação" styleClass="rotulo_destaque"/>
+                    <p:inputNumber value="#{calculos.alimentacao}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>    
+                    <h:outputLabel value="Transporte" styleClass="rotulo_destaque" />
+                    <p:inputNumber value="#{calculos.transporte}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Saúde" styleClass="rotulo_destaque"/>
+                    <p:inputNumber value="#{calculos.saude}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Moradia" styleClass="rotulo_destaque" />
+                    <p:inputNumber value="#{calculos.moradia}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Compras Gerais" styleClass="rotulo_destaque"/> 
+                    <p:inputNumber value="#{calculos.comprasG}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Fundo Reserva" styleClass="rotulo_destaque"/> 
+                    <p:inputNumber value="#{calculos.fundo}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>
+                    <h:outputLabel value="Outros" styleClass="rotulo_destaque"/> 
+                    <p:inputNumber value="#{calculos.outros}" symbol="R$" symbolPosition="p"
+                                   decimalSeparator="," thousandSeparator="."/>            
+                </p:panelGrid>
+
+                    <f:facet name="footer">
+                    <center>
+                    <p:commandButton value="Calcular" action="#{calculos.calcular()}" update="@form"
+                                     styleClass="rounded-button" style="margin-right: 20px"></p:commandButton>
+                    <p:commandButton value="Limpar" action="#{calculos.limpar()}" update="@form"
+                                     styleClass="rounded-button ui-button-success"></p:commandButton>
+                    </center> 
+                </f:facet>
+            </p:card>  
+                
+                <p:card style="width: 36em; height: 50em;">
+                <f:facet name="title">
+                  Gráfico das Despesas
+                </f:facet>
+                
+                <f:facet name="subtitle"> 
+                  Gráfico da composição total das despesas
+                </f:facet>
+                    
+                <p:pieChart
+                        model="#{calculos.pieModel}"
+                        style="width: 100%; height: 25em; margin-top: 5em;"
+                        />
+                </p:card>
+                
+                <p:card style="width: 30em; height: 50em">
+                <f:facet name="title">
+                  Porcentagem por Categoria
+                </f:facet>
+                
+                <f:facet name="subtitle"> 
+                   Resumo em % das despesas por categoria. 
+                </f:facet>
+                
+                    <p:panelGrid columns="2" style="margin-top: 5em">
+                    <h:outputLabel value="Alimentação"  styleClass="rotulo_receita" />
+                    <h:outputLabel value="#{calculos.f_alimentacao}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                    
+                    <h:outputLabel value="Transporte"  styleClass="rotulo_receita" />
+                    <h:outputLabel value="#{calculos.f_transporte}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                    
+                     <h:outputLabel value="Saúde"  styleClass="rotulo_receita" />
+                     <h:outputLabel value="#{calculos.f_saude}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                     
+                    <h:outputLabel value="Morádia"  styleClass="rotulo_receita" />
+                    <h:outputLabel value="#{calculos.f_moradia}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                    
+                     <h:outputLabel value="Compras Gerais"  styleClass="rotulo_receita" />
+                     <h:outputLabel value="#{calculos.f_comprasG}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                      
+                    <h:outputLabel value="Fundo Reserva"  styleClass="rotulo_receita" />
+                    <h:outputLabel value="#{calculos.f_fundo}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                    
+                   <h:outputLabel value="Outros"  styleClass="rotulo_receita" />
+                   <h:outputLabel value="#{calculos.f_outros}" styleClass="rotulo_desconto">
+                        <f:convertNumber pattern="0.0 %"/>
+                    </h:outputLabel> 
+                </p:panelGrid>
+                </p:card> 
+                
+                <f:facet name="footer">
+                    <center>
+                        <p:outputLabel value="Total Despesas" style="font-size: 18pt; margin-right: 22em;"/> 
+                        <p:outputLabel value="Sobra" style="font-size: 18pt;  margin-right: 10em;"/> 
+                    </center> 
+                    <center>
+                        <h:outputLabel value="#{calculos.totaldespesas}" styleClass="rotulo_resposta" style="margin-right: 10em;"> 
+                          <f:convertNumber pattern="R$ #,##0.00"/>
+                    </h:outputLabel>
+                        <h:outputLabel value="#{calculos.restante}" styleClass="rotulo_resposta"> 
+                          <f:convertNumber pattern="R$ #,##0.00"/>
+                    </h:outputLabel>
+                    </center>
+                    
+                </f:facet>
+            </p:panelGrid> 
+        </h:form>
+    </h:body>
+</html>
+
