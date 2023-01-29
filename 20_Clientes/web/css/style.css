@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+/* Reseta o código  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Define a fonte  */ 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*   */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    background-color: #222222;
+}
+.content {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 960px;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #A4031F;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    left: 0;
+}
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary {
+    color: #fff;
+}
+.title-second {
+    color: #A4031F;
+}
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: #fff;
+}
+.description-second {
+    color: #7f8c8d;
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: #EAF6FF;
+}
+
+.label-input {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.btn {
+   
+    margin: 6px 10px;
+}
+
+.lista { 
+    display: flex;
+    background-color: #222222;
+}
+
+
+

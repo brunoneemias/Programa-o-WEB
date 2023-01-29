@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>
+			Exemplo 01
+		</title>
+	</head>
+	
+	<body> 
+		<h1> 
+			Teste 01
+		</h1>
+		<?php 
+			ECHO <"font color = darkgreen size=15> Olá, Mundo! </font></i></center> <br>";
+	</body>
+	
+	<p> Olá, Mundo!</p> 
+	?> 
+	echo "<br>";
+	echo "Hello World!"; 
+</html>

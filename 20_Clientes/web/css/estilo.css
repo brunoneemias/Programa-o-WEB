@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 25, 2021, 5:29:05 AM
+    Author     : Fsociety
+*/
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{ 
+    display: flex;
+    border: 2px solid red; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.second-content { 
+    position: absolute;
+     
+}
+
+/** { 
+    margin: 0;
+    padding: 0;
+}
+img { 
+width: 2000px;
+}
+
+.toolbar {
+ height: 0px;
+ width: 0px;
+ position: absolute;
+ bottom: 700px;
+ flex-direction: column;
+ left: 10px;
+ 
+}
+
+
+.btn-toolbar{ 
+    border-radius: 20px !important;
+    width: 90px;
+    height: 80px;
+    text-align: center;
+    margin-bottom:  2rem !important;
+}
+
+.cadastro{ 
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px; 
+   
+}
+
+fieldset { 
+    border: 0;
+    float: left; 
+}
+
+body { 
+    background-color: rgb(211,211,211);
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-left: 1%;
+} */
+
+
+
