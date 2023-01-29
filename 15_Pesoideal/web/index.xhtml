@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <style type="text/css">
+    button.ui-button {
+        margin-right: .5rem;
+    }
+</style>
+        <title>Peso Ideal</title>
+    </h:head>
+    <h:body>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen"></link>
+        <h:form> <!-- o h informa que esse comando é do HTML basic --> 
+            <h:panelGrid columns="2">
+                <p:outputLabel value="Nome:" styleClass="rotulo-titulos"/>
+                <p:inputText id="txtNome"/>
+                
+                <p:outputLabel value="Altura:" styleClass="rotulo-titulos"/>
+                <p:inputText id="txtAltura" value="#{calculoPeso.altura}"/> 
+                <!-- o  comando acima vincula a caxa de texto txtAltura á variavel altura em CalculoPeso --> 
+                <p:outputLabel   value="Sexo:" styleClass="rotulo-titulos"/>
+                <p:inputText id="txtSexo"/> 
+                <p:selectOneRadio id="rbtSexo" value="#{calculoPeso.sexo}">
+                    <f:selectItem itemLabel="Masculino" itemValue="M"/>
+                    <f:selectItem itemLabel="Feminino" itemValue="F"/>  
+                </p:selectOneRadio>
+
+                <p:commandButton value="Calcular" action="#{calculoPeso.calcular()}" update="@form"></p:commandButton>
+                <p:commandButton value="Limpar" action="#{calculoPeso.limpar()}" update="@form"></p:commandButton>
+
+            </h:panelGrid>
+            
+            <br></br>
+            
+            <p:outputLabel value="#{calculoPeso.peso} kg" styleClass="rotulo-respostas"/>
+        </h:form> 
+    </h:body>
+</html>
+

@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 26, 2021, 12:48:22 PM
+    Author     : Fsociety
+*/
+
+*{ 
+     font-family: monospace; 
+     font-size: 18px;
+     color: burlywood;
+}
+
+.rotulo-titulos{ 
+    color: chartreuse;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.rotulo-respostas{ 
+    font-size: 20px;
+    font-weight: bold; 
+    font-style: italic; 
+}

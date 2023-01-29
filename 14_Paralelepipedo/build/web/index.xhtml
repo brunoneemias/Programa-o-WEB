@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Paralelepipedo</title>
+    </h:head>
+    <h:body>
+        <link rel="stylesheet" type="text/css" href="WEB-INF/Css/estilos.css"></link>
+        <h:form>
+            <h:panelGrid columns="2">
+                <p:outputLabel value="A" styleClass="rotulo-titulos"></p:outputLabel>
+                <p:inputText id="txtA" value="#{calculoAreaVolume.a}"></p:inputText>
+                
+                <p:outputLabel value="B" styleClass="rotulo-titulos"></p:outputLabel>
+                <p:inputText id="txtB" value="#{calculoAreaVolume.b}"></p:inputText>
+                
+                <p:outputLabel value="C" styleClass="rotulo-titulos"></p:outputLabel>
+                <p:inputText id="txtC" value="#{calculoAreaVolume.c}"></p:inputText>
+               
+                <p:commandButton value="Calcular" action="#{calculoAreaVolume.calculo()}"></p:commandButton>
+                <p:commandButton value="Limpar" action="#{calculoAreaVolume.limpar()}"></p:commandButton>
+               
+            </h:panelGrid>
+            
+            <br></br>
+            <p:outputLabel value="Volume = #{calculoAreaVolume.v}" styleClass="rotulo-respostas"></p:outputLabel>
+            <br></br>
+            <p:outputLabel value="Area Superficial = #{calculoAreaVolume.s}" styleClass="rotulo-respostas"></p:outputLabel>
+            <br></br>
+            <p:outputLabel value="#{calculoAreaVolume.sup}" styleClass="rotulo-respostas"></p:outputLabel>
+        </h:form>
+    </h:body>
+</html>
+

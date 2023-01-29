@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>Saldo Bancario</title>
+    </h:head>
+    
+    <h:body>
+        <link rel="stylesheet" type="text/css" href="Css/Estilo.css"></link>
+        <h:form>
+            <h:panelGrid columns="2">
+                <p:outputLabel value="Nº Conta:" styleClass="rotulo-titulos"></p:outputLabel>
+                <p:inputText id="txtNconta" value="#{calcularSaldo.n_conta}"></p:inputText>
+                
+                <p:outputLabel value="Saldo:" styleClass="rotulo-titulos"></p:outputLabel>
+                <p:inputText id="txtSaldo" value="#{calcularSaldo.saldo}"></p:inputText>
+                
+                   <p:outputLabel value="Débito:" styleClass="rotulo-titulos"></p:outputLabel>
+                   <p:inputText id="txtDeb" value="#{calcularSaldo.deb}"></p:inputText>
+                   
+                    <p:outputLabel value="Crédito:" styleClass="rotulo-titulos"></p:outputLabel>
+                    <p:inputText id="txtCre" value="#{calcularSaldo.cred}"></p:inputText>
+                    
+                       <p:commandButton value="Calcular" action="#{calcularSaldo.calculo()}" update="@form" immediate="true" ></p:commandButton>
+                         <br></br>
+                       <p:commandButton value="Limpar"   action="#{calcularSaldo.Limpar()}" update="@form" immediate="true" ></p:commandButton>
+
+            </h:panelGrid>
+            <br/> 
+            <p:outputLabel value="R$#{calcularSaldo.saldo}" styleClass="rotulo-respostas"></p:outputLabel>
+            <p:outputLabel value="#{calcularSaldo.situation}" styleClass="rotulo-respostas"></p:outputLabel>
+        </h:form>
+          
+    </h:body>
+</html>
+
