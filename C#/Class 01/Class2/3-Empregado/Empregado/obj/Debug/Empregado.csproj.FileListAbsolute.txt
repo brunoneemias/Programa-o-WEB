@@ -1,0 +1,10 @@
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\bin\Debug\Empregado.exe.config
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\bin\Debug\Empregado.exe
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\bin\Debug\Empregado.pdb
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.csproj.AssemblyReference.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.Properties.Resources.resources
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.csproj.GenerateResource.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.csproj.CoreCompileInputs.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.exe
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.pdb
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\08 - August\Home Work\Empregado\Empregado\Empregado\obj\Debug\Empregado.FormMenu.resources
