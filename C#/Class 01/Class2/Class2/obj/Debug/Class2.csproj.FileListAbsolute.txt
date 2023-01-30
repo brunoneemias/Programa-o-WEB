@@ -1,0 +1,10 @@
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.csproj.AssemblyReference.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.Form1.resources
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.Properties.Resources.resources
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.csproj.GenerateResource.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.csproj.CoreCompileInputs.cache
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\bin\Debug\Class2.exe.config
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\bin\Debug\Class2.exe
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\bin\Debug\Class2.pdb
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.exe
+C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 3\Web Programming 3\7 - July\Class 01\Class2\Class2\obj\Debug\Class2.pdb
